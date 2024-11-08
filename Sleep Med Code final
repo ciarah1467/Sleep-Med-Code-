@@ -1,0 +1,30 @@
+# description: 
+from earsketch import *
+
+setTempo(80) #slow tempo for relaxation 
+
+fitMedia(AK_UNDOG_SFX_1 , 1, 1, 11) #introduce fading SFX 
+fitMedia(RD_POP_TRINKLELEAD_1 , 2, 1, 12)
+setEffect(1, VOLUME, GAIN, -60, 1, 0, 3)
+setEffect(1, VOLUME, GAIN, 0, 6, -12, 12)
+fitMedia(MILKNSIZZ_LATE_SPRING_DARK_MELODIC_LOOP , 3, 1, 5) #end here 
+setEffect(1, VOLUME, GAIN, -60, 1, 0, 3) #volume gain 
+setEffect(1, VOLUME, GAIN, 0, 6, -60, 8) #volume decrease
+
+fitMedia(RD_CINEMATIC_SCORE_DRUMPART_9, 5, 12, 20) #faster beats @9 to sync with synth below
+fitMedia(DKBEAR_FREE_THEME_SYNTH_1, 6, 12, 35) #change in beats/sound to introduce new bridge
+#leaving the synth on its own for these counts relaxes the mind 
+
+fitMedia(RD_CINEMATIC_SCORE_HARP_3, 6, 3, 10) 
+
+beatString = "0+2+0+110+1+0+13"
+
+fitMedia(SAMIAN_PEUP_THEME_FLUTE, 7, 18, 24) #insert an added instrument for dimension 
+setEffect(7, VOLUME, GAIN, -10) #lower the volume as the beat was too intense on its own 
+fitMedia(RADICAL_WV_VOCALS_2, 8, 28, 29) #to finish earlier than second vocals  
+fitMedia(RADICAL_WV_VOCALS_2, 8, 31, 32) #distance the vocals apart for lower intensity 
+fitMedia(RADICAL_WV_VOCALS_2, 8, 34, 35) #finish early to signify the song coming to an end 
+setTempo(50) #slower tempo 
+setEffect(8, VOLUME, GAIN, -10) #lower volume on the choir
+fitMedia(Y33_CHOIR_2, 9, 28, 40)
+setEffect(9, VOLUME, GAIN, -10) #lower volume on the choir
